@@ -12,6 +12,8 @@ namespace Gemlik_Patcher
 {
     public partial class GemlikPatcher : Form
     {
+        SettingsMenu settings = new SettingsMenu();
+        Form currentForm = Form.ActiveForm;
         public GemlikPatcher()
         {
             InitializeComponent();
@@ -25,7 +27,7 @@ namespace Gemlik_Patcher
 
         private void Settings_Click(object sender, EventArgs e)
         {
-
+            settings.Show();
         }
 
         private void Quit_Click(object sender, EventArgs e)
