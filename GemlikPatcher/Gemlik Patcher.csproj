@@ -54,6 +54,9 @@
     <NoWin32Manifest>true</NoWin32Manifest>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PSArcTool">
+      <HintPath>..\..\..\..\Downloads\PSArcTool.exe</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -67,11 +70,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LocalSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LocalSet.Designer.cs">
+      <DependentUpon>LocalSet.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainMenu.Designer.cs">
       <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="SettingsMenu.cs">
       <SubType>Form</SubType>
@@ -81,19 +95,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="LocalSet.resx">
+      <DependentUpon>LocalSet.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="SettingsMenu.resx">
       <DependentUpon>SettingsMenu.cs</DependentUpon>
     </EmbeddedResource>
@@ -126,6 +138,7 @@
     <Content Include="RCLOGO.ico" />
     <None Include="Resources\intro.jpg" />
     <None Include="Resources\220px-RaCbox.jpg" />
+    <None Include="Resources\PS3arc.psarc" />
     <None Include="Resources\Ratchet_and_clank_gc_image.jpg" />
     <None Include="Resources\Deadlocked.jpg" />
     <None Include="Resources\Ratchetandclank3box.jpg" />

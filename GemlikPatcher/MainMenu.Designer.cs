@@ -36,7 +36,7 @@
             // 
             // Mods
             // 
-            this.Mods.Font = new System.Drawing.Font("Eras Bold ITC", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Mods.Font = new System.Drawing.Font("RGFuture", 20F);
             this.Mods.Location = new System.Drawing.Point(260, 139);
             this.Mods.Name = "Mods";
             this.Mods.Size = new System.Drawing.Size(100, 72);
@@ -47,7 +47,7 @@
             // Settings
             // 
             this.Settings.Cursor = System.Windows.Forms.Cursors.Default;
-            this.Settings.Font = new System.Drawing.Font("Eras Bold ITC", 12F, System.Drawing.FontStyle.Bold);
+            this.Settings.Font = new System.Drawing.Font("RGFuture", 12F);
             this.Settings.Location = new System.Drawing.Point(249, 56);
             this.Settings.Name = "Settings";
             this.Settings.Size = new System.Drawing.Size(100, 30);
@@ -59,7 +59,7 @@
             // Quit
             // 
             this.Quit.BackColor = System.Drawing.Color.Red;
-            this.Quit.Font = new System.Drawing.Font("Eras Bold ITC", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Quit.Font = new System.Drawing.Font("RGFuture", 20F);
             this.Quit.Location = new System.Drawing.Point(249, 237);
             this.Quit.Name = "Quit";
             this.Quit.Size = new System.Drawing.Size(100, 39);

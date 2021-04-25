@@ -7,13 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.IO;
 namespace Gemlik_Patcher
 {
     public partial class GemlikPatcher : Form
     {
-        SettingsMenu settings = new SettingsMenu();
-        Form currentForm = Form.ActiveForm;
         public GemlikPatcher()
         {
             InitializeComponent();
@@ -22,11 +20,20 @@ namespace Gemlik_Patcher
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            if (!File.Exists(Application.StartupPath + "/Data.wkj"))
+            {
+                StreamWriter st = new StreamWriter(Application.StartupPath + "/Data.wkj");
+                for (int i = 0; i < 128; i++)
+                {
+                    st.WriteLine("");
+                }
+                st.Close();
+            }
         }
 
         private void Settings_Click(object sender, EventArgs e)
         {
+            SettingsMenu settings = new SettingsMenu();
             settings.Show();
         }
 
