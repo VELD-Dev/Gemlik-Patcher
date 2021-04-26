@@ -30,7 +30,6 @@ namespace Gemlik_Patcher
                 st.Close();
             }
         }
-
         private void Settings_Click(object sender, EventArgs e)
         {
             SettingsMenu settings = new SettingsMenu();
@@ -41,13 +40,19 @@ namespace Gemlik_Patcher
         {
             if (MessageBox.Show( "I'm not mad, just disappointed.", "Do you really want to quit? ", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                MessageBox.Show("BUT " + Environment.UserName + ", I AM YOUR FATHER...'S ACCOUNTANT! \n \n also why didn't you use the quit button, at least make my death ");
+                MessageBox.Show("BUT " + Environment.UserName + ", I AM YOUR FATHER...'S ACCOUNTANT! \n \n also why didn't you use the quit button, at least make my death quick");
                 Application.Exit();
             }
             else
             {
                 MessageBox.Show("You just gained additional fun person points!");
             }
+        }
+
+        private void Mods_Click_1(object sender, EventArgs e)
+        {
+            ModsMenu settings = new ModsMenu();
+            settings.Show();
         }
     }
 }

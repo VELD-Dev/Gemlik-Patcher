@@ -43,6 +43,7 @@
             this.Mods.TabIndex = 0;
             this.Mods.Text = "Mods";
             this.Mods.UseVisualStyleBackColor = true;
+            this.Mods.Click += new System.EventHandler(this.Mods_Click_1);
             // 
             // Settings
             // 

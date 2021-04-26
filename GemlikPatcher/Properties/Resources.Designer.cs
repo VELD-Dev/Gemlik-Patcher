@@ -73,9 +73,39 @@ namespace Gemlik_Patcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BFG {
+            get {
+                object obj = ResourceManager.GetObject("BFG", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Deadlocked {
             get {
                 object obj = ResourceManager.GetObject("Deadlocked", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Gemlik_Base_1 {
+            get {
+                object obj = ResourceManager.GetObject("Gemlik_Base_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Ghost_Station {
+            get {
+                object obj = ResourceManager.GetObject("Ghost_Station", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -126,6 +156,16 @@ namespace Gemlik_Patcher.Properties {
         internal static System.Drawing.Bitmap Ratchetandclank3box {
             get {
                 object obj = ResourceManager.GetObject("Ratchetandclank3box", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Silver_City_3 {
+            get {
+                object obj = ResourceManager.GetObject("Silver_City_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

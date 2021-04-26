@@ -15,10 +15,8 @@ namespace Gemlik_Patcher
     public partial class LocalSet : Form
     {
         public int gameID;
-        public string welp = "Gemlik_Patcher.Properties.Resources._";
         public Image[] boxArts = { null, Properties.Resources._220px_RaCbox, Properties.Resources.Ratchet_and_clank_gc_image, Properties.Resources.Ratchetandclank3box, Properties.Resources.Deadlocked};
         string[] s;
-        Process p;
         public LocalSet()
         {
             InitializeComponent();
@@ -67,7 +65,7 @@ namespace Gemlik_Patcher
             }
             File.WriteAllBytes(dir + "/rc" + gameID + "/ps3data/PS3arc.psarc", Properties.Resources.PS3arc);
             ProcessStartInfo INFO = new ProcessStartInfo(Application.StartupPath + "/PSArcTool.exe", dir + "/ORGarc.psarc");
-            INFO.CreateNoWindow = false;
+            INFO.CreateNoWindow = true;
             Process.Start(INFO);
             
         }
